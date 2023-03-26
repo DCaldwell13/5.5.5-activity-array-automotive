@@ -10,16 +10,16 @@ class Vehicle {
         this.started = false;
         this.numberOfWheels = 0;
     }
-
-    start() {
-        if (this.fuel > 0) {
-            return this.started = true;
-            console.log("engine started...!!!");
-        } else {
-            return this.started = false;
-            console.log("engine cannot start...");
-        }
-    }
+    
+   // start() {
+   //     if (this.fuel > 0) {
+   //         return this.started = true;
+   //         console.log("engine started...!!!");
+   //    } else {
+   //         return this.started = false;
+   //         console.log("engine cannot start...");
+   //     }
+   // }
     accelerate() {
         if (this.started) {
             if (this.fuel > 0) {
@@ -85,7 +85,6 @@ class Vehicle {
     }
 }
 
-//This exports things you want to use from this "module", more info in readme
 module.exports = {
     Vehicle
 }
